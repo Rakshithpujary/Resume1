@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            /* font-size: 1.5vi; */
+        }
+        .col1,.col2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .d1{
+            flex: 50%;
+            background-color:#632222;
+            border-top-right-radius: 1.5vw;
+            border-bottom-right-radius: 1.5vw;
+            color: aliceblue;
+            
+        }
+        .d2{
+            flex: 50%;
+            text-align:right;
+        }
+        .d3{
+            flex: 50%;
+        }
+        .d4{
+            flex: 50%;
+            background-color:#f1d0d0;
+            border-top-left-radius: 1.5vw;
+            border-bottom-left-radius: 1.5vw;
+            color: #632222;
+            padding-bottom: 10px;
+        }
+        .fa{
+            color: #632222;
+        }
+        #icon1{
+            display: none;
+        }
+        #extra1{
+            display: none;
+        }
+        #grey{
+            color: rgb(103, 103, 103);
+        }
+        .btn{
+            background-color: grey;
+            width: 300px;
+
+
+        }
+        h1{
+            /* font-size: 1.5vw; */
+        }
+        h2{
+            color: #632222;
+            /* font-size: 2.5vw; */
+        }
+        h2:hover{
+            color: #250808;
+            box-shadow: 0px 0px px 4px #250808;
+        }
+        a::before{
+            color: rgb(69, 142, 174);
+           
+        }
+        a::after{
+            color: purple;
+        }
+        a:hover{
+            color: blue;
+        }
+        img:hover{
+            scale: 1.2;
+            box-shadow: 0px 0px 2px 4px rgba(0, 0, 0, 0.687);
+        }
+
+        @media screen and (max-width:700px) {
+            .d1,.d2,.d3,.d4{
+                flex: 100%;
+            }
+            .d2{
+                text-align: left;
+            }
+            #icon1{
+                display:inline;
+            }
+            #icon2{
+                display: none;
+            }
+            #extra1{
+                display: inline;
+            }
+            #extra2{
+                display: none;
+            }
+            #img{
+                position: relative;
+                left: 110px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- start of main div -->
+    <div class="container-fluid"> 
+        <!-- start of first row-->
+        <div class="row col1">
+            <!-- start of first column -->
+            <div class="col-6 d1 text-break">
+                <label id="content1"><br><img src="PIC.jpg.jpeg" id="img" style="border-radius: 20%;width: 110px;height: 110px;"><br><h1>Rakshith Rangaraj Poojary</h1>
+                    <span id="set">Looking forward to work in an organization with a position to expand and utilize my learning, skills and
+     knowledge. Possess excellent communication skills and have an eye for detail. Flexible to work in any
+     environment as required.</span></label>
+            </div>
+            <!-- end of first column -->
+            <!-- start of second column -->
+            <div class="col-6 d2 text-break">
+                <h2><b><i class="fas fa-info-circle"></i>&nbsp;&nbsp;&nbsp;<u>DETAILS</u></b></h2>
+                <label id="content3">
+                <i class="fa fa-phone" id="icon1"></i>&nbsp;&nbsp;&nbsp;&nbsp;9113030659&nbsp;&nbsp;<i class="fa fa-phone" id="icon2"></i><br>
+                <i class="fa fa-envelope" id="icon1"></i>&nbsp;&nbsp;&nbsp;&nbsp;poojaryrakshith042@gamil.com&nbsp;&nbsp;<i class="fa fa-envelope" id="icon2"></i><br>
+                <i class="fa fa-map-marker" id="icon1"></i>&nbsp;&nbsp;&nbsp;&nbsp;Rathna Nilaya ,Moodubettu Village,Kodavoor <span id=extra1>Post,udupi,India</span>&nbsp;&nbsp;<i class="fa fa-map-marker" id="icon2"></i><br>
+                <span id=extra2>Post,udupi,India<br></span>
+                <i class="fa fa-github" id="icon1"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/Rakshithpujary" id="github">github</a>&nbsp;&nbsp;<i class="fa fa-github" id="icon2"></i><br>
+                <i class="fa fa-linkedin" id="icon1"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/rakshith-poojary-385587235" id="linkedin">linkedin</a>&nbsp;&nbsp;<i class="fa fa-linkedin" id="icon2"></i><br>
+                <i class="fa fa-external-link" id="icon1"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.hackerrank.com/poojaryrakshith3?hr_r=1">hacker rank</a><i class="fa fa-external-link" id="icon2"></i><br>
+                <i class="fas fa-video" id="icon1"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="videoPlayer.html">video_link</a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-video" id="icon2"></i>
+                </label><br><br>
+            </div>
+            <!-- end of second column -->
+        </div>
+        <!-- end of first row -->
+        <!-- start of second row -->
+        <div class="row col2">
+            <!-- start of first columnn -->
+            <div class="col-6 d3 text-break">
+                <label id="content2">
+                    <h2><i class="fas fa-graduation-cap icon"></i>&nbsp;&nbsp;&nbsp;<u>EDUCATION</u></h2>
+                    <b>Master of Computer Applications</b><br>
+                    <label id="clg_content"> 
+                        Institute of Technology,Manipal.<br>
+                        <span id="grey">09/2022 - Present&nbsp;&nbsp;&nbsp;&nbsp;7.62 CGPA</span>
+                    </label><br><br>
+                    <b>Bachelor of Computer Applications</b><br>
+                    <label id="clg_content"> 
+                        Mahatma Gandhi memorial college,Udupi.<br>
+                        <span id="grey">2019 - 2022&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;78.04%</span>
+                    </label><br><br>
+                    <b>Pre-University</b><br>
+                    <label id="clg_content"> 
+                        Poornaprajna PreUniversity College, Udupi.<br>
+                        <span id="grey">2019&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;79.66%</span>
+                    </label><br><br>
+                    <h2><i class="fas fa-clipboard-list"></i>&nbsp;&nbsp;&nbsp;<u>PERSONAL PROJECTS</u></h2>
+                    <b>Online Food Delivery (2022)</b>
+                    <label id="project_content">
+                        <ul>
+                            <li>Developed using HTML,CSS,Mysql,PHP& Javascript.</li>
+                            <li>food ordering website where customer could select different food
+                                items of their taste and order using user friendly UI.</li>
+                            <li>Admin module where admin could keep tract of each order and
+                                different products and also can remove the particular food items
+                                from the menu.</li>
+                          </ul>
+
+                    </label>
+                    <br><br>
+                    <b>Onroad Assistance (2023)</b>
+                    <label id="project_content">
+                        <ul id="p2">
+                            <li>Developed using
+                                HTML,CSS,JavaScript,Bootstrap5,Ajax,Node.js,Express.js,leaflet and
+                                openstreetmap,MongoDB and Mongo Atlas.</li>
+                            <li>OnRoad Breakdown is a web-based application that provides
+                                people travelling with an easy and convenient way to book a
+                                mechanic. This system is designed to simplify the process of getting
+                                help at a location or a new place the person just visited.</li>
+                          </ul>
+
+                    </label>
+                    <br><br>
+                    <h2><b><i class="fas fa-users"></i>&nbsp;&nbsp;&nbsp;<u>SOFT SKILLS</u></b></h2>
+                    <label id="soft_skill">
+                        <ul>
+                        <li>Capable of working independently and collaboratively in team</li>
+                        <li>Adaptive to work under pressure</li>
+                        <li>Time management</li>
+                        <li>Creative and analytical thinking</li>
+                        <li>Effective Decission making and Problem Solving</li>
+                        
+                      </ul>  
+                    </label><br>
+                </label>
+            </div>
+            <!-- end of first column -->
+            <!-- start of second column -->
+            <div class="col-6 d4 text-break">
+                <label id="content4">
+                    <h2><i class="fas fa-code"></i>&nbsp;&nbsp;&nbsp;<u>TECHNICAL SKILLS</u></b></h2>
+                    <label id="techical_skill">
+                        <ul>
+                            <li>C/C++</li>
+                            <li>JAVA</li>
+                            <li>PYTHON</li>
+                            <li>MYSQL</li>
+                            <li>MONGODB</li>
+                            <li>PHP</li>
+                            <li>LINUX</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>BOOTSTRAP</li>
+                      </ul>
+                    </label>
+                    <h2><i class="fas fa-award"></i>&nbsp;&nbsp;&nbsp;<u>CERTIFICATION</u></b></h2>
+                    <b>JavaScript Basics(2022)</b><br>
+                    <b>Introduction to MongoDB(2023)</b><br>
+                    <label id="certifi">
+                        <a id="l1" href="https://coursera.org/share/56b5b45c5571ed0c5cfbf93218a0920d">https://coursera.org/share/56b5b45c5571ed0c5cfbf93218a0920d</a>
+                    </label><br>
+                    <b>Getting started with Redis(2023)</b><br>
+                    <label id="certificet">
+                        <a id="l1" href="https://coursera.org/share/192a81bbf2a0c8e83cf85df1750a7fb5">https://coursera.org/share/192a81bbf2a0c8e83cf85df1750a7fb5</a>
+                    </label><br>
+                    <b>Getting started with Redis(2023)</b><br>
+                    <label id="certificet">
+                        <a id="l1" href="https://coursera.org/share/5ae35da0ea598193a65030baee659e79">https://coursera.org/share/5ae35da0ea598193a65030baee659e79</a>
+                    </label><br><br>
+                    <h2><i class="fas fa-globe"></i>&nbsp;&nbsp;&nbsp;<u>LANGUAGES</u></b></h2>
+                    <label id="lang">
+                        <ul>
+                            <li>English<br><span id="grey"><i>Full Professional Proficiency</i></li></span>
+                            <li>Hindi<br><span id="grey"><i>Native or Bilingual Proficiency</i></li></span>
+                            <li>Kannada<br><span id="grey"><i>Native or Bilingual Proficiency</i></li></span>
+                            
+                          </ul>
+                    </label><br><br>
+                    <h2><i class="fas fa-music"></i>&nbsp;&nbsp;&nbsp;<u>INTERESTS</u></b></h2>
+                    <label id="interest">
+                        <ul>
+                            <li>traveling</li>
+                            <li>gym</li>
+                            <li>cricket</li>
+                            <li>football</li>
+                            <li>trekking</li>
+                            
+                          </ul>
+                    </label>
+
+                </label><br><br>
+                <button class="btn btn-primary" id="btn"><i class="fa fa-download"></i></button> 
+            </div>
+            <!-- end of second column -->
+        </div>
+        <!-- end of second row -->
+        
+    </div>
+    <!-- end of main div -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        down_btn=document.getElementById("btn");
+        down_btn.addEventListener("click", function() 
+        {
+            const pdf_path = "rakshith_resume.pdf";
+
+            const xml = new XMLHttpRequest();
+
+            xml.responseType = "blob";
+
+            xml.onload = function() 
+            {
+                if (xml.status === 200) 
+                {
+                    const url = URL.createObjectURL(xml.response);
+                    const link = document.createElement("a");
+                    link.href = url;
+                    link.download = "Rakshith_Resume.pdf";
+                    link.click();
+                    URL.revokeObjectURL(url);
+                }
+            };
+            xml.open("GET", pdf_path);
+            xml.send();
+        });
+
+</script>
+    </script>
+</body>
+</html>
